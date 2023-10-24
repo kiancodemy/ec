@@ -8,7 +8,7 @@ import Shopcategory from "./pages/Shopcategory";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
-    <div>
+    <div className="font-Poppins">
       <BrowserRouter>
         <Navbar></Navbar>
         <Routes>

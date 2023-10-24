@@ -7,7 +7,7 @@ import Cart from "../assets/cart_icon.png";
 function Navbar() {
   const [menu, setmenu] = useState("");
   return (
-    <section className="overflow-hidden">
+    <section>
       <div className="container mx-auto py-1 lg:justify-between justify-around gap-2 border-b-2 px-2 flex">
         <div className="flex  justify-center lg:ml-5 items-center space-x-5">
           <img src={Logo} alt="logo" />

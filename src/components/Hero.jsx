@@ -3,7 +3,7 @@ import Heroo from "../assets/hero_image.png";
 function Hero() {
   return (
     <section>
-      <div className="font-Poppins border-none flex lg:justify-around items-center mx-auto px-4 bg-gradient-to-b from-[#ee9ca7] to-[#ffdde1]">
+      <div className="border-none flex lg:justify-around items-center mx-auto px-4 bg-gradient-to-b from-[#f7ced3] to-[#fff]">
         <div>
           <div>
             <p className="font-semibold py-1 text-md lg:text-xl uppercase">

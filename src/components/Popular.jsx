@@ -1,5 +1,5 @@
 import data from "../assets/data";
-import Items from "./items/Items";
+import Items from "./Items";
 function Popular() {
   const getall = data.map((item, i) => {
     return (
@@ -14,9 +14,12 @@ function Popular() {
     );
   });
   return (
-    <div>
-      <h1>Popular in women</h1>
-      <div>{getall}</div>
+    <div className="flex p-2 items-center gap-[10px] flex-col">
+      <h1 className="text-[#272829] py-1 text-5xl font-semibold">
+        Popular in women
+      </h1>
+      <hr className="w-[200px] bg-[#272829] font-bold  rounded-md h-[5px] mx-auto "></hr>
+      <div className="lg:flex gap-[30px] mt-12">{getall}</div>
     </div>
   );
 }
