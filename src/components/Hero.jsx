@@ -3,7 +3,7 @@ import Heroo from "../assets/hero_image.png";
 function Hero() {
   return (
     <section>
-      <div className="border-none flex lg:justify-around items-center mx-auto px-4 bg-gradient-to-b from-[#f7ced3] to-[#fff]">
+      <div className="border-none flex lg:justify-around items-center mx-auto  px-8 bg-gradient-to-b from-[#f7ced3] to-[#fff]">
         <div>
           <div>
             <p className="font-semibold py-1 text-md lg:text-xl uppercase">
@@ -22,8 +22,8 @@ function Hero() {
             </button>
           </div>
         </div>
-        <div className="hidden basis-1/3 lg:flex lg:items-center">
-          <img className="object-cover " src={Heroo} alt="v" />
+        <div className="flex">
+          <img src={Heroo} alt="v" />
         </div>
       </div>
     </section>
