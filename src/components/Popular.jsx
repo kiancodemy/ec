@@ -14,12 +14,14 @@ function Popular() {
     );
   });
   return (
-    <div className="flex h-[90vh] px-4 items-center gap-[10px] flex-col">
+    <div className="flex lg:h-[90vh] px-4 items-center gap-[10px] flex-col">
       <h1 className="text-[#272829] py-1 text-2xl lg:text-5xl font-semibold">
         Popular in women
       </h1>
       <hr className="w-[200px] bg-[#272829] font-bold  rounded-md h-[5px] mx-auto "></hr>
-      <div className="lg:flex gap-[30px] mt-10 lg:px-10">{getall}</div>
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 mt-8 lg:grid-cols-4 px-8">
+        {getall}
+      </div>
     </div>
   );
 }

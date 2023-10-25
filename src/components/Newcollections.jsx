@@ -16,11 +16,13 @@ function Newcollections() {
 
   return (
     <div className="flex-col flex items-center">
-      <h1 className="text-2xl font-semibold lg:text-5xl py-2">
+      <h1 className="text-2xl capitalize font-semibold lg:text-5xl py-1">
         new collections
       </h1>
       <hr className="w-[200px] h-[5px] rounded-lg my-4 bg-black mx-auto"></hr>
-      <div className="flex justify-center flex-wrap gap-2 px-4">{getall}</div>
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 mt-8 lg:grid-cols-4 px-8">
+        {getall}
+      </div>
     </div>
   );
 }

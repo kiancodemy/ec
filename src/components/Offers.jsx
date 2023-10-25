@@ -1,7 +1,7 @@
 import exclusive from "../assets/exclusive_image.png";
 function Offers() {
   return (
-    <div className="bg-gradient-to-b rounded-lg  px-[100px] mb-[150px] from-[#C9D6FF] to-[#E2E2E2] max-w-[70%] flex h-[60vh] mx-auto">
+    <div className="bg-gradient-to-b rounded-lg  px-[100px] mb-[100px] from-[#C9D6FF] to-[#E2E2E2] lg:w-[70%] flex lg:h-[60vh] mx-auto">
       <div className=" flex flex-col justify-center">
         <h1 className="text-5xl capitalize font-semibold text-[#171717]">
           exclusive
