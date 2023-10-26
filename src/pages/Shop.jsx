@@ -2,6 +2,7 @@ import Hero from "../components/Hero";
 import Popular from "../components/Popular";
 import Offers from "../components/Offers";
 import Newsletter from "../components/Newsletter";
+
 import Newcollections from "../components/Newcollections";
 function Shop() {
   return (

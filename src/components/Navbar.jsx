@@ -36,7 +36,7 @@ function Navbar() {
             }}
             className="hover:border-b-red-600 border-2 py-1 text-[18px] duration-200 border-white"
           >
-            <Link to="/womans">women</Link>
+            <Link to="/womens">women</Link>
           </li>
           <li
             onClick={() => {
