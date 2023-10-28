@@ -2,7 +2,7 @@ function Loginsignup() {
   return (
     <div className="py-40">
       <div className="border-2 p-8 border-[#ddd] rounded-lg  flex flex-col gap-5 max-w-[500px] mx-auto ">
-        <h1 className="text-4xl font-semibold ">sign up</h1>
+        <h1 className="text-2xl lg:text-4xl font-semibold ">sign up</h1>
 
         <div className="flex flex-col">
           <input
@@ -26,15 +26,15 @@ function Loginsignup() {
           continue
         </button>
 
-        <p className="flex gap-1">
+        <p className="flex gap-1 text-sm lg:text-lg ">
           Already have an account ?
-          <span className="font-semibold hover:text-red-600 duration-300">
+          <span className=" text-sm lg:text-lg font-semibold hover:text-red-600 duration-300">
             Login Here
           </span>
         </p>
-        <div className="flex items-center gap-3">
+        <div className="flex text-sm  items-center gap-2">
           <input type="checkbox" name="" id="" />
-          <p>by continung,i gree to the term of use & privacy policy</p>
+          <p>by continuing,i gree to the term of use & privacy policy</p>
         </div>
       </div>
     </div>
