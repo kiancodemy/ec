@@ -22,15 +22,20 @@ function Loginsignup() {
           />
         </div>
 
-        <button className="bg-red-600 text-white capitalize py-4">
+        <button className="rounded-lg bg-red-600 duration-200 hover:bg-red-700 text-white capitalize py-4">
           continue
         </button>
 
-        <p>
-          Already have an account?
-          <span className="font-semibold"> Login Here</span>
+        <p className="flex gap-1">
+          Already have an account ?
+          <span className="font-semibold hover:text-red-600 duration-300">
+            Login Here
+          </span>
         </p>
-        <div></div>
+        <div className="flex items-center gap-3">
+          <input type="checkbox" name="" id="" />
+          <p>by continung,i gree to the term of use & privacy policy</p>
+        </div>
       </div>
     </div>
   );
