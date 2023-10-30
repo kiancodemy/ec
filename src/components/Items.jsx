@@ -3,7 +3,14 @@ function Items({ id, image, name, new_price, old_price }) {
   return (
     <div className="max-w-[350px] hover:scale-105">
       <Link to={`/product/${id}`}>
-        <img className="rounded-md" src={image} alt="kian" />
+        <img
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+          className="rounded-md"
+          src={image}
+          alt="kian"
+        />
       </Link>
       <p className="my-2">{name}</p>
       <div className="flex gap-[20px]">

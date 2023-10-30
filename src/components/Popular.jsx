@@ -14,7 +14,7 @@ function Popular() {
     );
   });
   return (
-    <div className="flex lg:h-[90vh] px-4 items-center gap-[10px] flex-col">
+    <div id="1" className="flex lg:h-[90vh] px-4 items-center gap-[10px] flex-col">
       <h1 className="text-[#272829] py-1 text-2xl lg:text-5xl font-semibold">
         Popular in women
       </h1>

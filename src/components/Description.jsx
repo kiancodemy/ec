@@ -6,7 +6,7 @@ function Description() {
           description
         </p>
         <p className="capitalize border-2 border-b-0  border-[#ddd] font-semibold border-l-0 px-8 py-4  ">
-          reviews
+          reviews (122)
         </p>
       </div>
       <div className="border-2  border-[#ddd] p-8">

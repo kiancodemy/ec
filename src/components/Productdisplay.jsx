@@ -1,7 +1,14 @@
+import { useContext } from "react";
 import start from "../assets/star_icon.png";
+import { ShopContext } from "./context/Createcontext";
+
 import Description from "./Description";
+import Relatedproducts from "./Relatedproducts";
+import { useState } from "react";
 
 function Productdisplay({ product }) {
+  const { additems } = useContext(ShopContext);
+  const [a, b] = useState(false);
   return (
     <div>
       <div className="flex flex-col lg:flex-row py-4 gap-10">
@@ -9,26 +16,26 @@ function Productdisplay({ product }) {
           <div className="basis-1/4 grow flex flex-col gap-2">
             <img
               src={product.image}
-              className="rounded-lg hover:scale-90 duration-300 hover:border-red-500 border-2 p-2"
+              className="cursor-pointer rounded-lg hover:scale-90 duration-300 hover:border-red-500 border-2 p-2"
               alt="d"
             />
             <img
               src={product.image}
-              className="rounded-lg hover:scale-90 duration-300 hover:border-red-500 border-2 p-2"
+              className=" rounded-lg cursor-pointer hover:scale-90 duration-300 hover:border-red-500 border-2 p-2"
               alt="d"
             />
             <img
               src={product.image}
-              className="rounded-lg hover:scale-90 duration-300 hover:border-red-500 border-2 p-2"
+              className="rounded-lg cursor-pointer hover:scale-90 duration-300 hover:border-red-500 border-2 p-2"
               alt="d"
             />
             <img
               src={product.image}
-              className="rounded-lg hover:scale-90 duration-300 hover:border-red-500 border-2 p-2"
+              className="cursor-pointer rounded-lg hover:scale-90 duration-300 hover:border-red-500 border-2 p-2"
               alt="d"
             />
           </div>
-          <div className="basis-4/5 grow flex">
+          <div className=" basis-4/5 grow flex">
             <img
               className="object-cover h-full w-full rounded-lg "
               src={product.image}
@@ -61,23 +68,28 @@ function Productdisplay({ product }) {
           </div>
           <h1 className="pt-2 capitalize font-semibold">select size</h1>
           <div className="flex gap-4 py-2">
-            <div className="hover:border-[#ddd] rounded-md border-2 border-[#eee] py-2 px-3 font-semibold">
+            <div className="cursor-pointer hover:border-[#ddd] rounded-md border-2 border-[#eee] py-2 px-3 font-semibold">
               S
             </div>
-            <div className="hover:border-[#ddd] rounded-md border-2 border-[#eee] py-2 px-3 font-semibold">
+            <div className="cursor-pointer hover:border-[#ddd] rounded-md border-2 border-[#eee] py-2 px-3 font-semibold">
               M
             </div>
-            <div className="hover:border-[#ddd] rounded-md border-2 border-[#eee] py-2 px-3 font-semibold">
+            <div className=" hover:border-[#ddd] rounded-md border-2 border-[#eee] py-2 px-3 font-semibold">
               L
             </div>
-            <div className="hover:border-[#ddd] rounded-md border-2 border-[#eee] py-2 px-3 font-semibold">
+            <div className=" hover:border-[#ddd] rounded-md border-2 border-[#eee] py-2 px-3 font-semibold">
               XL
             </div>
-            <div className="hover:border-[#ddd] rounded-md border-2 border-[#eee] py-2 px-3 font-semibold">
+            <div className=" hover:border-[#ddd] rounded-md border-2 border-[#eee] py-2 px-3 font-semibold">
               XXL
             </div>
           </div>
-          <div className="bg-red-600 hover:bg-red-500 text-[#eee] py-2 duration-300 px-4 rounded-md hover:translate-y-[-3px]  self-start">
+          <div
+            onClick={() => {
+              additems(product.id);
+            }}
+            className=" cursor-pointer bg-red-600 hover:bg-red-500 text-[#eee] py-2 duration-300 px-4 rounded-md hover:translate-y-[-3px]  self-start"
+          >
             ADD TO CART
           </div>
           <div className="flex flex-col gap-1 pt-4 ">
@@ -92,6 +104,20 @@ function Productdisplay({ product }) {
         </div>
       </div>
       <Description></Description>
+      <div className=" mt-10 flex justify-center items-center">
+        {!a && (
+          <button
+            className="bg-[#ddd] duration-200 text-[#000] hover:mb- rounded-md px-8 py-4 hover:bg-[#000] hover:text-white "
+            onClick={() => {
+              b(true);
+            }}
+          >
+            explore more
+          </button>
+        )}
+      </div>
+
+      {a && <Relatedproducts></Relatedproducts>}
     </div>
   );
 }

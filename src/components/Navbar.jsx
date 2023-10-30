@@ -6,6 +6,7 @@ import Cart from "../assets/cart_icon.png";
 
 function Navbar() {
   const [menu, setmenu] = useState("");
+
   return (
     <section>
       <div className="container mx-auto py-1 lg:justify-between justify-around gap-2 border-b-2 px-2 flex">
