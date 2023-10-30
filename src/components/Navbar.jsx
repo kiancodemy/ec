@@ -11,7 +11,7 @@ function Navbar() {
       <div className="container mx-auto py-1 lg:justify-between justify-around gap-2 border-b-2 px-2 flex">
         <div className="flex  justify-center lg:ml-5 items-center space-x-5">
           <img src={Logo} alt="logo" />
-          <p className="lg:text-3xl text-xl uppercase font-bold">Shopper</p>
+          <p className="lg:text-3xl text-md uppercase font-bold">Shopper</p>
         </div>
         <ul className="lg:flex hidden capitalize font-semibold justify-between items-center gap-8 ">
           <li
@@ -47,7 +47,7 @@ function Navbar() {
             <Link to="/kids">kids</Link>
           </li>
         </ul>
-        <div className="lg:pr-10 flex lg:gap-10 items-center">
+        <div className="lg:pr-10 flex gap-2 lg:gap-10 items-center">
           <Link to="/login">
             <button className="inline-block hover:bg-[#aaa] shadow-md hover:shadow-xl duration-200 hover:text-white px-4 py-1  lg:px-8 lg:py-2 rounded-full border">
               Login

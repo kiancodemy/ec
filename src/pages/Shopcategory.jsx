@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import Items from "../components/Items";
 import { FiArrowDown } from "react-icons/fi";
+
 import { ShopContext } from "../components/context/Createcontext";
 function Shopcategory({ banner, category }) {
   const { alldata } = useContext(ShopContext);
@@ -21,13 +22,13 @@ function Shopcategory({ banner, category }) {
   return (
     <div className="max-w-[80%] mx-auto">
       <img className="hidden lg:block" src={banner} alt="banner" />
-      <div className="flex py-4 items-center justify-between">
+      <div className="flex py-6 items-center justify-between">
         <p>
           <span className="font-semibold ">showing 1-12</span> out of 36
         </p>
         <div>
-          <button className="flex border-2 border-[#ddd] rounded-full py-1 px-2 justify-center items-center">
-            <span>sort by</span>
+          <button className="flex border-2 border-[#ddd] gap-1 rounded-full py-1 px-4 justify-center items-center">
+            <span className="capitalize">sort by</span>
             <FiArrowDown></FiArrowDown>
           </button>
         </div>

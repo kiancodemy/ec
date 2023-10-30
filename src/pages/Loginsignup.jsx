@@ -26,15 +26,17 @@ function Loginsignup() {
           continue
         </button>
 
-        <p className="flex gap-1 text-sm lg:text-lg ">
+        <p className="flex gap-2 text-sm lg:text-lg ">
           Already have an account ?
           <span className=" text-sm lg:text-lg font-semibold hover:text-red-600 duration-300">
-            Login Here
+            Login here
           </span>
         </p>
-        <div className="flex text-sm  items-center gap-2">
+        <div className="flex  items-center gap-2">
           <input type="checkbox" name="" id="" />
-          <p>by continuing,i gree to the term of use & privacy policy</p>
+          <p className="text-sm ">
+            by continuing,i gree to the term of use & privacy policy
+          </p>
         </div>
       </div>
     </div>
