@@ -88,7 +88,7 @@ function Productdisplay({ product }) {
             onClick={() => {
               additems(product.id);
             }}
-            className=" cursor-pointer bg-red-600 hover:bg-red-500 text-[#eee] py-2 duration-300 px-4 rounded-md hover:translate-y-[-3px]  self-start"
+            className=" cursor-pointer bg-red-600 hover:bg-red-700 text-[#eee] py-2 duration-300 px-4 rounded-md active:translate-y-2  self-start"
           >
             ADD TO CART
           </div>

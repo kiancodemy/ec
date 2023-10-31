@@ -1,11 +1,16 @@
 import Logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useContext } from "react";
+import { ShopContext } from "./context/Createcontext";
 
 import Cart from "../assets/cart_icon.png";
 
 function Navbar() {
   const [menu, setmenu] = useState("");
+
+  const { allnumbers } = useContext(ShopContext);
+  let total = allnumbers();
 
   return (
     <section>
@@ -59,7 +64,7 @@ function Navbar() {
               <img width={27} src={Cart} alt="cart" />
             </Link>
             <div className="absolute right-[-22px] top-[-15px]  w-[25px] h-[25px] rounded-full bg-red-600 text-white text-[12px] flex items-center justify-center">
-              0
+              {total}
             </div>
           </div>
         </div>
