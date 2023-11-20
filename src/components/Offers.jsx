@@ -1,8 +1,8 @@
 import exclusive from "../assets/exclusive_image.png";
 function Offers() {
   return (
-    <div className="bg-gradient-to-b rounded-lg  px-[100px] mb-[100px] from-[#C9D6FF] to-[#E2E2E2] lg:w-[70%] flex lg:h-[60vh] mx-auto">
-      <div className=" flex flex-col justify-center">
+    <div className="bg-gradient-to-b rounded-lg px-6 my-3  lg:px-[100px] mb-[100px] from-[#C9D6FF] to-[#E2E2E2] lg:w-[70%] flex lg:h-[60vh] mx-auto">
+      <div className="p-5 flex flex-col justify-center">
         <h1 className="text-5xl capitalize font-semibold text-[#171717]">
           exclusive
         </h1>
@@ -16,7 +16,7 @@ function Offers() {
           check now
         </button>
       </div>
-      <div className="flex pt-[50px]">
+      <div className="lg:flex pt-[50px] hidden  ">
         <img src={exclusive} alt="images" />
       </div>
     </div>

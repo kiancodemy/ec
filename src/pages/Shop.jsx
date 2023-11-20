@@ -6,7 +6,7 @@ import Newsletter from "../components/Newsletter";
 import Newcollections from "../components/Newcollections";
 function Shop() {
   return (
-    <div className="overflow-x-scroll">
+    <div className="overflow-hidden">
       <Hero></Hero>
       <Popular></Popular>
       <Offers></Offers>

@@ -7,14 +7,14 @@ function Newsletter() {
       <p className="text-md text-[#454545]">
         subscribe to your newsletter and stay updated
       </p>
-      <div className="border-2border-[#bbb] outline-none rounded-full lg:w-[520px] bg-white border-solid border-1 flex   justify-between items-center ">
+      <div className="border-2border-[#bbb] outline-none rounded-full lg:w-[520px] bg-white border-solid border-1 flex justify-between items-center ">
         <input
           type="email"
           className="placeholder:capitalize border-none rounded-full pl-3  focus:outline-none focus:placeholder:translate-x-4 focus:placeholder:text-black  focus:placeholder:duration-300 focus:border-none  "
           placeholder="Your email id"
         />
         <button
-          className="text-[#ddd] capitalize hover:text-white hover:translate-x-3 duration-500 inline-block py-2 px-6 rounded-full bg-black "
+          className="text-[#ddd] capitalize hover:text-white  duration-500 inline-block py-2 px-6 rounded-full bg-black "
           type="submit"
         >
           subscribe

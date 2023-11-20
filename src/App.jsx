@@ -12,7 +12,7 @@ import Shopcategory from "./pages/Shopcategory";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
-    <div className="font-Poppins">
+    <div className="font-Poppins overflow-hidden">
       <BrowserRouter>
         <Navbar></Navbar>
         <Routes>
