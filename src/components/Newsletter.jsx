@@ -7,7 +7,7 @@ function Newsletter() {
       <p className="lg:text-md text-sm text-[#454545]">
         subscribe to your newsletter and stay updated
       </p>
-      <div className="border-2border-[#bbb] outline-none  rounded-full lg:w-[420px] bg-white border-solid border-1 flex justify-center items-center ">
+      <div className="border-2border-[#bbb] outline-none w-[80%] mx-auto  rounded-full lg:w-[420px] bg-white border-solid border-1 flex justify-between items-center ">
         <input
           type="email"
           className="placeholder:capitalize border-none rounded-full pl-3  focus:outline-none focus:placeholder:translate-x-2 focus:placeholder:text-black  focus:placeholder:duration-300 focus:border-none  "
